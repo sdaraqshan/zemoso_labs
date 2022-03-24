@@ -84,4 +84,11 @@ how the top 10 lines with head command.
 
 ![Screenshot from 2022-03-24 21-27-33](https://user-images.githubusercontent.com/59451084/159958321-1fe9b1d4-f64f-4f42-9276-d192d63c1ff4.png)
 
+# Final output
+
+Displays 10 Hosts and the reponse time of each Host. The Host IP's are provided by the given URL. 
+
+![Screenshot from 2022-03-24 21-27-33](https://user-images.githubusercontent.com/59451084/159961425-318627b1-6ad3-45be-a8a3-f701dba72c10.png)
+
+
 
