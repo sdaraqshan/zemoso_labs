@@ -37,10 +37,15 @@ print the last N number of data of the given input. where N is 50
 ## xargs -i timeout 1 ping -c1 -w 1 {}
 
 xargs -> reads streams of data from standard input, then generates and executes command lines; meaning it can take output of a command and passes it as argument of another command
+
 -i →  The -I option changes the way the new command lines are built. Instead of adding as many arguments as possible at a time, xargs will take one name at a time from its input, look for the given token ({} here) and replace that with the name.
+
 timeout 1 →  Start COMMAND, and kill it if still running after DURATION. of 1 second
+
 ping → check the network connectivity between host and server/host.
+
 ping -c1 → wait for all responses from broadcast.
+
 ping -c1 -w1   ping wait one second at a time
 
 ![Screenshot from 2022-03-24 21-17-53](https://user-images.githubusercontent.com/59451084/159956037-dae44fb5-706d-492c-bb9f-3cc53cf91ad0.png)
@@ -54,13 +59,20 @@ grep →  search for a string in groups of files.
 ## awk '{print substr($7, 6, length($7)) " " substr($4, 1, length($4) -1)}' 
  
  Awk is mostly used for pattern scanning and processing. It searches one or more files to see if they contain lines that matches with the specified patterns and then perform the associated actions.
+ 
 substr(s, a, b) : it returns b number of chars from string s, starting at position a. The parameter b is optional, in which case it means up to the end of the string.
+
 print substr($7, 6, length($7))  →  $7 - string  - prints seventh word of line
+
 6 - starting position
+
 Length($7) → ending position
+
 print substr($7, 6, length($7)) " " substr($4, 1, length($4) -1)  →  print result of substring and give space and print result of second substring
 substr($4, 1, length($4) -1)  →  $4 -string  prints fourth word of file
+
 1 → starting position
+
 Length($4)-1  →  print till the second last character
  
  
@@ -75,6 +87,7 @@ Numeric sorting is different from alphabetical sorting. For numeric sorting opti
 ## awk '{print $2 " " $1 "ms"}' 
 
 awk: Allows users to use variables, string functions, and logical operators without compiling.
+
 {print $2 " " $1 "ms"}: print second column then first column, the delimiter is by default whitespace.
 
 ![Screenshot from 2022-03-24 21-25-53](https://user-images.githubusercontent.com/59451084/159957764-e3521e47-5a92-4394-9dd9-830844eb0a51.png)
