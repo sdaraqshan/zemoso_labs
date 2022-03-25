@@ -15,8 +15,9 @@ cURL, which stands for client URL, is a command line tool that developers use to
 
 ## cut -d, -f1
 
-    The cut command is a command-line utility for cutting sections from each line of a file. It writes the result to the standard output. It's worth noting that it does not modify the file, but only works on a copy of the content.
--d option means that the default delimiter is the tab character.
+    The cut command is a command-line utility for cutting sections from each line of a file. It writes the result to the standard output. 
+    It's worth noting that it does not modify the file, but only works on a copy of the content.
+-d option means that the default delimiter is the tab character. here delimiter is ,
 returns back the 1st field(-f1).
 
 ![Screenshot from 2022-03-24 21-08-53](https://user-images.githubusercontent.com/59451084/159955196-c9edd695-4d99-44fd-a2c4-04b682c64d22.png)
